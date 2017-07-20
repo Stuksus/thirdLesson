@@ -39,7 +39,7 @@ foreach($animals as $k=>$v){
 
     echo "$string3";
 
-    $example4 = preg_split(" /^(\S+)\ (\S+)\ (\S+)$/",$string3);  /* Попытка разделить строку по 2 слова  преобразовать ее в массив*/
+    $example4 = preg_split("/[a-zA-Z]+\s+[a-zA-Z]+/",$string3);  /* Попытка разделить строку по 2 слова  преобразовать ее в массив*/
 
     echo "<pre>";
     print_r($example4);
